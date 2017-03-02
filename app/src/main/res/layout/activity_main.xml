@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="abudhabi.com.myapplication.MainActivity">
+   <abudhabi.com.myapplication.ArcLine
+       android:visibility="gone"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="200dp" />
+   <com.github.rongi.rotate_layout.layout.RotateLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:angle="90">
+      <abudhabi.com.myapplication.widget.CircularListView
+          android:layout_width="300dp"
+          android:layout_height="match_parent"
+          android:id="@+id/circularListView"/>
+   </com.github.rongi.rotate_layout.layout.RotateLayout>
+</RelativeLayout>
